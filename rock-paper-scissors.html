@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="theme-switcher">
+        <button id="theme-toggle">🌙 Theme</button>
+    </div>
+    <div class="game-container">
+        <h1>Rock Paper Scissors</h1>
+        <div class="avatar-select">
+            <label>Player Avatar:
+                <select id="player-avatar">
+                    <option value="🧑">🧑</option>
+                    <option value="🐱">🐱</option>
+                    <option value="🐶">🐶</option>
+                    <option value="🤖">🤖</option>
+                </select>
+            </label>
+            <label>Computer Avatar:
+                <select id="computer-avatar">
+                    <option value="💻">💻</option>
+                    <option value="👾">👾</option>
+                    <option value="🦾">🦾</option>
+                    <option value="🦉">🦉</option>
+                </select>
+            </label>
+        </div>
+        <div class="scoreboard">
+            <div id="player-score">Player: 0</div>
+            <div id="computer-score">Computer: 0</div>
+        </div>
+        <div class="bonus-round" id="bonus-round">Bonus Round! Double Points!</div>
+        <div class="timer-mode">
+            <button id="timer-toggle">⏱️ Timer Mode</button>
+            <span id="timer-display"></span>
+        </div>
+        <div class="choices">
+
+            <button class="choice-btn rock">🪨 Rock</button>
+            <button class="choice-btn paper">📄 Paper</button>
+            <button class="choice-btn scissors">✂️ Scissors</button>
+        </div>
+        <div class="result" id="result"></div>
+        <div class="fun-fact" id="fun-fact"></div>
+        <div class="sound-toggle">
+            <button id="sound-toggle">🔊 Sound</button>
+        </div>
+        <div class="history-container">
+            <h3>Game History</h3>
+            <ul id="game-history"></ul>
+        </div>
+        <div class="leaderboard-container">
+            <h3>Leaderboard</h3>
+            <ol id="leaderboard"></ol>
+        </div>
+    </div>
+    <audio id="win-sound" src="win.mp3" preload="auto"></audio>
+    <audio id="lose-sound" src="lose.mp3" preload="auto"></audio>
+    <audio id="bg-music" src="bg-music.mp3" loop preload="auto"></audio>
+    <div id="confetti"></div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
